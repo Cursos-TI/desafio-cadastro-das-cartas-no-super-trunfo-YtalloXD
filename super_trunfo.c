@@ -7,14 +7,15 @@
 //Teste larissa
 
 int main() {
-    
+// As variáveis contendo metadados das cartas
+
     char city_name1[50] = "São Paulo";
     char card_code1[50] = "A01";
     char state1[50] = "A";
     int poi_qty1 = 50;
     float areaKm1 = 1521.11;
     float pib1 = 699.28;
-    unsigned long int popul1 = 12325000;
+    int popul1 = 12325000;
     unsigned long int densipopul1 = 8102.47;
     unsigned long pibpc1 = 56724.32;
 
@@ -26,7 +27,7 @@ int main() {
     int poi_qty2 = 30;
     float areaKm2 = 1200.25;
     float pib2 = 300.50;
-    unsigned long int popul2 = 6748000;
+    int popul2 = 6748000;
     unsigned long int densipopul2 = 5622.24;
     unsigned long int pibpc2 = 44532.91;
 
@@ -74,11 +75,50 @@ int main() {
 
     printf("PIB per Capita: %u\n", pibpc2);
 
-//Comparando as cartas abaixo:
+//Comparando as cartas abaixo com as condicionais:
 
     printf("\nComparando as cartas:\n");
 
-    printf("População: Carta 1 venceu (%u)\n Área: Carta 1 venceu (%d)\n PIB: Carta 1 venceu (%d)\n Pontos Turísticos: Carta 1 venceu (%d)\n Densidade Populacional: Carta 2 venceu (%u)\n PIB per Capita: Carta 1 venceu (%u)\n Super Poder: Carta 1 venceu %d", pib1 > pib2, areaKm1 > areaKm2, popul1 > popul2, poi_qty1 > poi_qty2, densipopul1 < densipopul2, pibpc1 > pibpc2, superpoder1 > superpoder2);
+    if(popul1 > popul2){
+        printf("Carta 1 venceu!\n");
+    } else{
+        printf("Carta 2 venceu!\n");
+    }
 
+    if(areaKm1 > areaKm2){
+        printf("Carta 1 venceu!\n");
+    } else{
+        printf("Carta 2 venceu!\n");
+    }
+
+    if(pib1 > pib2){
+        printf("Carta 1 venceu!\n");
+    } else{
+        printf("Carta 2 venceu!\n");
+    }
+
+    if(poi_qty1 > poi_qty2){
+        printf("Carta 1 venceu!\n");
+    } else{
+        printf("Carta 2 venceu!\n");
+    }
+
+    if(densipopul1 < densipopul2){
+        printf("Carta 1 venceu!\n");
+    } else{
+        printf("Carta 2 venceu!\n");
+    }
+
+    if(pibpc1 > pibpc2){
+        printf("Carta 1 venceu!\n");
+    } else{
+        printf("Carta 2 venceu!\n");
+    }
+
+    if(superpoder1 > superpoder2){
+        printf("Carta 1 venceu definitivamente!\n");
+    } else{
+        printf("Carta 2 venceu definitivamente!\n");
+    }
     return 0;
 }
