@@ -41,7 +41,7 @@ int main() {
 
 
 
-    printf("Carta 1:\nEstado: (ex: A)\n");
+    printf("Carta 1:\nEstado: (ex: SP)\n");
     scanf("%s", state1);
 
     printf("Código da carta: (ex: A01)\n");
@@ -68,7 +68,7 @@ int main() {
 
 // Carta 2:
 
-    printf("\nCarta 2:\nEstado: (ex: B)\n");
+    printf("\nCarta 2:\nEstado: (ex: RJ)\n");
     scanf("%s", state2);
 
     printf("Código da carta: (ex: B02)\n");
